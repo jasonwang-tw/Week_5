@@ -13,8 +13,9 @@
 </head>
 
 <body>
-  <div class="d-flex h-100">
-    <div class="leftNav d-flex flex-column justify-content-between">
+  <div class="container-fluid h-100">
+    <div class="row h-100">
+    <div class="leftNav col-xl-2 h-100 d-flex flex-column justify-content-between">
       <div class="navTop">
         <h1><img src="assets/images/logo-ANSWER.svg" alt="" srcset=""></h1>
         <div class="list-group list-group-flush">
@@ -31,15 +32,10 @@
         </div>
       </div>
       <div class="navBottom">
-        <!-- <div class="userInfo d-flex">
-          <div class="userImg"><img src="assets/images/andychen.jpeg" alt="" srcset=""></div>
-          <div class="userInfoBox">
-            <div class="userName">Andy Chen</div>
-            <div class="userMail">andy0401@mail.com</div>
-          </div>
-        </div> -->
         <div class="media">
-          <img src="./assets/images/andychen.jpeg" class="mr-3" alt="..." style="width: 64px;">
+          <div class="userImg mr-3">
+            <img src="./assets/images/andychen.jpeg" class="rounded-circle" alt="...">
+          </div>
           <div class="media-body">
             <h5 class="mt-0">Andy Chen</h5>
             andy0401@mail.com
@@ -49,6 +45,8 @@
 
     </div>
     <%- contents %>
+  </div>
+  </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"></script>

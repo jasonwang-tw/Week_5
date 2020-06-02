@@ -1,4 +1,10 @@
 .leftNav{
-    flex-basis: 300px;
-    background: #EDF4EE;
+    background-color: #edf4ee;
+}
+.list-group,
+.list-group-item{
+    border: 1px solid rgb(237, 244, 238);
+}
+.list-group-item-first{
+    background-color: #edf4ee;
 }
