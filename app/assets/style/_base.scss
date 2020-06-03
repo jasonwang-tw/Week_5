@@ -35,6 +35,13 @@
    opacity: 0.7;
  }
  
+ h1{
+   font-weight: bold;
+   font-size: 1.8rem;
+ }
+ p{
+   margin-bottom: 10px;
+ }
  .row_padding64 {
    padding: 64px 0;
  }
@@ -47,3 +54,28 @@
      width: 100%;
    }
  }
+
+.leftNav{
+  background-color: #edf4ee;
+}
+.list-group,
+.list-group-item{
+  border: 1px solid rgb(237, 244, 238);
+}
+.list-group-item-first{
+  background-color: #edf4ee;
+}
+.listGroupCustom.active{
+  background-color: #edf4ee;
+}
+.listGroupCustom:hover{
+  background-color: #edf4ee;
+}
+.canClick{
+  cursor: pointer;
+  transition-duration: .3s;
+}
+.canClick:hover{
+  opacity: 0.5;
+  transition-duration: .3s;
+}
