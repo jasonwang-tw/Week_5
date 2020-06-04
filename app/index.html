@@ -1,0 +1,338 @@
+---
+title: 首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="rightContainer col-xl-10 p-4">
+  <div class="d-flex container-fluid justify-content-between align-items-center mb-4 mt-4">
+    <div class="d-flex containerTitle align-items-center">
+      <h1>Assignment</h1>
+      <div class="dropdown ml-5">
+        <button class="btn dropdown-toggle dropdownCustom" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          All Courses
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </div>
+    <div class="float-right">
+      <i class="material-icons canClick mr-4">search</i>
+      <i class="material-icons canClick">notifications_active</i>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xl-4">
+        <div class="dropdown">
+          <button class="btn dropdown-toggle dropdownCustom" type="button" id="dropdownMenuButton"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            All
+          </button>
+          <span class="badge">(4)</span>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+        <div class="list-group comment-list" id="list-tab" role="tablist">
+          <a class="listGroupCustom list-group-item-action active p-3" id="list-home-list" data-toggle="list"
+            href="#list-home" role="tab" aria-controls="home">
+            <div class="d-flex commentTitleContainer justify-content-between align-items-center">
+              <div class="commentLeft">
+                <div class="cTag">Chapter Assignment 2</div>
+                <div class="cTitle">Please check this file…</div>
+              </div>
+              <div class="commentRight">
+                <div class="cTime">4 hrs ago</div>
+                <div class="cName">Emily Wang</div>
+              </div>
+            </div>
+          </a>
+          <a class="listGroupCustom list-group-item-action p-3" id="list-profile-list" data-toggle="list"
+            href="#list-profile" role="tab" aria-controls="profile">
+            <div class="d-flex commentTitleContainer justify-content-between align-items-center">
+              <div class="commentLeft">
+                <div class="cTag">Chapter Assignment 1</div>
+                <div class="cTitle">My Homework</div>
+              </div>
+              <div class="commentRight">
+                <div class="cTime">12 hrs ago</div>
+                <div class="cName">David Xu</div>
+              </div>
+            </div>
+          </a>
+          <a class="listGroupCustom list-group-item-action p-3" id="list-messages-list" data-toggle="list"
+            href="#list-messages" role="tab" aria-controls="messages">
+            <div class="d-flex commentTitleContainer justify-content-between align-items-center">
+              <div class="commentLeft">
+                <div class="cTag">Final Assignment</div>
+                <div class="cTitle">Have a problem with this…</div>
+              </div>
+              <div class="commentRight">
+                <div class="cTime">18 hrs ago</div>
+                <div class="cName">Tony Wei</div>
+              </div>
+            </div>
+          </a>
+          <a class="listGroupCustom list-group-item-action p-3" id="list-settings-list" data-toggle="list"
+            href="#list-settings" role="tab" aria-controls="settings">
+            <div class="d-flex commentTitleContainer justify-content-between align-items-center">
+              <div class="commentLeft">
+                <div class="cTag">Final Assignment</div>
+                <div class="cTitle">Did I do it right?</div>
+              </div>
+              <div class="commentRight">
+                <div class="cTime">19 hrs ago</div>
+                <div class="cName">Christina Lin</div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-xl-8">
+        <div class="tab-content commentBox" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+            <p class="text-right">2 comments</p>
+            <ul class="list-group list-group-flush">
+              <li class="d-flex list-group-item-first justify-content-between align-items-center">
+                <div class="commentTitle p-3">
+                  <div class="cTag">Chapter Assignment 2 / HTML&CSS</div>
+                  <div class="cTitle">Please check this file for me, thanks!</div>
+                </div>
+                <i class="material-icons canClick mr-4">more_vert</i>
+              </li>
+              <li class="list-group-item p-4">
+                <div class="media">
+                  <div class="userImg mr-3">
+                    <img src="./assets/images/emilywang.jpeg" class="rounded-circle" alt="...">
+                  </div>
+                  <div class="media-body">
+                    <h5 class="mt-0">Emily Wang</h5>
+                    10:38 AM (4 hours ago)
+                    <div class="commentText mt-4 mb-4">
+                      <p>Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in
+                        the
+                        following code the height of the div is bigger than the height of the img ? There is a gap below
+                        the
+                        image, but it doesn’t seems to be a padding/margin.
+                        What is the gap or extra space below image?</p>
+                    </div>
+                    <button class="btn btn-lg btnDownload">HW-2-David.zip</button>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item p-4">
+                <div class="media">
+                  <div class="userImg mr-3">
+                    <img src="./assets/images/andychen.jpeg" class="rounded-circle" alt="...">
+                  </div>
+                  <div class="media-body">
+                    <div class="userEdit float-right">
+                      <i class="material-icons canClick">star_border</i>
+                      <i class="material-icons ml-2 canClick">create</i>
+                    </div>
+                    <h5 class="mt-0">Andy Chen (You)</h5>
+                    13:24 AM (1 hours ago)
+                    <div class="commentText mt-4 mb-4">
+                      <p>Hi David, by default, an image is rendered inline, like a letter so it sits on the
+                        same line that a, b, c and d sit on. There is space below that line for the
+                        descenders you find on letters like g, j, p and q.
+
+                        You can:
+
+                        • adjust the vertical-align of the image to position it elsewhere (e.g. the middle ) or
+
+                        • change the display so it isn’t inline.</p>
+                    </div>
+
+                  </div>
+                </div>
+
+              </li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <div class="arrowChange">
+                <i class="material-icons canClick mr-3">chevron_left</i>
+                <i class="material-icons canClick">chevron_right</i>
+              </div>
+              <div class="btnComment">
+                <button class="btn btn-lg btnRead mr-3">Mark as read</button>
+                <button class="btn btn-lg btnCommentReply">Reply</button>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+            <p class="text-right">2 comments</p>
+            <ul class="list-group list-group-flush">
+              <li class="d-flex list-group-item-first justify-content-between align-items-center">
+                <div class="commentTitle p-3">
+                  <div class="cTag">Chapter Assignment 2 / HTML&CSS</div>
+                  <div class="cTitle">Please check this file for me, thanks!</div>
+                </div>
+                <i class="material-icons canClick mr-4">more_vert</i>
+              </li>
+              <li class="list-group-item p-4">
+                <div class="media">
+                  <div class="userImg mr-3">
+                    <img src="./assets/images/emilywang.jpeg" class="rounded-circle" alt="...">
+                  </div>
+                  <div class="media-body">
+                    <h5 class="mt-0">Emily Wang</h5>
+                    10:38 AM (4 hours ago)
+                    <div class="commentText mt-4 mb-4">
+                      <p>Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in
+                        the
+                        following code the height of the div is bigger than the height of the img ? There is a gap below
+                        the
+                        image, but it doesn’t seems to be a padding/margin.
+                        What is the gap or extra space below image?</p>
+                    </div>
+                    <button class="btn btn-lg btnDownload">HW-2-David.zip</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <div class="arrowChange">
+                <i class="material-icons canClick mr-3">chevron_left</i>
+                <i class="material-icons canClick">chevron_right</i>
+              </div>
+              <div class="btnComment">
+                <button class="btn btn-lg btnRead mr-3">Mark as read</button>
+                <button class="btn btn-lg btnCommentReply">Reply</button>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+            <p class="text-right">2 comments</p>
+            <ul class="list-group list-group-flush">
+              <li class="d-flex list-group-item-first justify-content-between align-items-center">
+                <div class="commentTitle p-3">
+                  <div class="cTag">Chapter Assignment 2 / HTML&CSS</div>
+                  <div class="cTitle">Please check this file for me, thanks!</div>
+                </div>
+                <i class="material-icons canClick mr-4">more_vert</i>
+              </li>
+              <li class="list-group-item p-4">
+                <div class="media">
+                  <div class="userImg mr-3">
+                    <img src="./assets/images/andychen.jpeg" class="rounded-circle" alt="...">
+                  </div>
+                  <div class="media-body">
+                    <div class="userEdit float-right">
+                      <i class="material-icons canClick">star_border</i>
+                      <i class="material-icons ml-2 canClick">create</i>
+                    </div>
+                    <h5 class="mt-0">Andy Chen (You)</h5>
+                    13:24 AM (1 hours ago)
+                    <div class="commentText mt-4 mb-4">
+                      <p>Hi David, by default, an image is rendered inline, like a letter so it sits on the
+                        same line that a, b, c and d sit on. There is space below that line for the
+                        descenders you find on letters like g, j, p and q.
+
+                        You can:
+
+                        • adjust the vertical-align of the image to position it elsewhere (e.g. the middle ) or
+
+                        • change the display so it isn’t inline.</p>
+                    </div>
+
+                  </div>
+                </div>
+
+              </li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <div class="arrowChange">
+                <i class="material-icons canClick mr-3">chevron_left</i>
+                <i class="material-icons canClick">chevron_right</i>
+              </div>
+              <div class="btnComment">
+                <button class="btn btn-lg btnRead mr-3">Mark as read</button>
+                <button class="btn btn-lg btnCommentReply">Reply</button>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+            <p class="text-right">2 comments</p>
+            <ul class="list-group list-group-flush">
+              <li class="d-flex list-group-item-first justify-content-between align-items-center">
+                <div class="commentTitle p-3">
+                  <div class="cTag">Chapter Assignment 2 / HTML&CSS</div>
+                  <div class="cTitle">Please check this file for me, thanks!</div>
+                </div>
+                <i class="material-icons canClick mr-4">more_vert</i>
+              </li>
+              <li class="list-group-item p-4">
+                <div class="media">
+                  <div class="userImg mr-3">
+                    <img src="./assets/images/emilywang.jpeg" class="rounded-circle" alt="...">
+                  </div>
+                  <div class="media-body">
+                    <h5 class="mt-0">Emily Wang</h5>
+                    10:38 AM (4 hours ago)
+                    <div class="commentText mt-4 mb-4">
+                      <p>Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in</p>
+                    </div>
+                    <button class="btn btn-lg btnDownload">HW-2-David.zip</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <div class="arrowChange">
+                <i class="material-icons canClick mr-3">chevron_left</i>
+                <i class="material-icons canClick">chevron_right</i>
+              </div>
+              <div class="btnComment">
+                <button class="btn btn-lg btnRead mr-3">Mark as read</button>
+                <button class="btn btn-lg btnCommentReply">Reply</button>
+              </div>
+            </div>
+          </div>
+          <div class="enterText w-100">
+            <ul class="d-flex align-items-center textFunction p-3 mb-0">
+              <select class="fontBar mr-4 pr-2">
+                <option value="Body Text">Body Text</option>
+              </select>
+              <li class="mr-4 canClick">
+                <i class="material-icons">format_bold</i>
+              </li>
+              <li class="mr-4 canClick">
+                <i class="material-icons">format_italic</i>
+              </li>
+              <li class="mr-4 canClick">
+                <i class="material-icons">format_list_bulleted</i>
+              </li>
+              <li class="mr-4 canClick">
+                <i class="material-icons">format_list_numbered</i>
+              </li>
+              <li class="mr-4 canClick">
+                <i class="material-icons">insert_photo</i>
+              </li>
+              <li class="mr-4 canClick">
+                <i class="material-icons">insert_link</i>
+              </li>
+              <li class="mr-4 canClick">
+                <i class="material-icons">chevron_left</i>
+                <i class="material-icons">chevron_right</i>
+              </li>
+            </ul>
+            <textarea name="" id="" cols="30" rows="7" placeholder="Reply an answer…" class="w-100 p-3"></textarea>
+            <div class="btnComment btnCommentBox mr-3 mb-3 mt-3">
+              <button class="btn btn-lg btnCancel mr-3">Cancel</button>
+              <button class="btn btn-lg btnReply">Reply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
